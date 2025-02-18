@@ -2,11 +2,11 @@ import { configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // Uses localStorage
 import { combineReducers } from "redux";
-import counterReducer from "./counterSlice"; // Example reducer
+import chartSelectionReducer from "./chartSelectionSlice"; // Example reducer
 
 // Combine reducers (add more if needed)
 const rootReducer = combineReducers({
-  counter: counterReducer,
+  chartSelectionData: chartSelectionReducer,
 });
 
 // Persist config
